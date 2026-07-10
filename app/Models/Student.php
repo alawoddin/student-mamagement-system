@@ -11,4 +11,15 @@ class Student extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+     public function class() {
+        return $this->hasMany(Classes::class , 'class_id');
+    }
+
+
+     public function section() {
+        return $this->hasMany(Section::class , 'section_id');
+    }
+
+
 }
