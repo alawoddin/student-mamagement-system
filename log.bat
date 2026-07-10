@@ -1,0 +1,51 @@
+@echo off
+cd /d C:\your-project-path
+
+for /l %%x in (1, 1, 10) do (
+    echo i commit the code but not show the commit it is scure %%x >> log.bat
+    git add .
+    git commit -m "Add commit  %%x"
+)
+
+git push origin main
+i commit the code but not show the commit it is scure 1 
+i commit the code but not show the commit it is scure 2 
+i commit the code but not show the commit it is scure 3 
+i commit the code but not show the commit it is scure 4 
+i commit the code but not show the commit it is scure 5 
+i commit the code but not show the commit it is scure 6 
+i commit the code but not show the commit it is scure 7 
+i commit the code but not show the commit it is scure 8 
+i commit the code but not show the commit it is scure 9 
+i commit the code but not show the commit it is scure 10 
+i commit the code but not show the commit it is scure 1 
+i commit the code but not show the commit it is scure 2 
+i commit the code but not show the commit it is scure 3 
+i commit the code but not show the commit it is scure 4 
+i commit the code but not show the commit it is scure 5 
+i commit the code but not show the commit it is scure 6 
+i commit the code but not show the commit it is scure 7 
+i commit the code but not show the commit it is scure 8 
+i commit the code but not show the commit it is scure 9 
+i commit the code but not show the commit it is scure 10 
+i commit the code but not show the commit it is scure 1 
+i commit the code but not show the commit it is scure 2 
+i commit the code but not show the commit it is scure 3 
+i commit the code but not show the commit it is scure 4 
+i commit the code but not show the commit it is scure 5 
+i commit the code but not show the commit it is scure 6 
+i commit the code but not show the commit it is scure 7 
+i commit the code but not show the commit it is scure 8 
+i commit the code but not show the commit it is scure 9 
+i commit the code but not show the commit it is scure 10 
+i commit the code but not show the commit it is scure 1 
+i commit the code but not show the commit it is scure 2 
+i commit the code but not show the commit it is scure 3 
+i commit the code but not show the commit it is scure 4 
+i commit the code but not show the commit it is scure 5 
+i commit the code but not show the commit it is scure 6 
+i commit the code but not show the commit it is scure 7 
+i commit the code but not show the commit it is scure 8 
+i commit the code but not show the commit it is scure 9 
+i commit the code but not show the commit it is scure 10 
+i commit the code but not show the commit it is scure 1 
