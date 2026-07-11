@@ -12,7 +12,7 @@ class StudentController extends Controller
      public function index()
 {
     // Eager load the relationships
-    $students = Student::with(['class', 'section'])->get();
+    $students = Student::with(['class', 'section'])->paginate(10);
 
     return Inertia::render('Student/Index', [
         'students' => StudentResource::collection($students),
