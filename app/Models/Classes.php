@@ -12,6 +12,12 @@ class Classes extends Model
 
     protected $guarded = [];
 
+    // Add this method to fix the route binding
+    public function getRouteKeyName()
+    {
+        return 'id'; // Use 'id' instead of 'class_id'
+    }
+
     public function sections() {
         return $this->hasMany(Section::class , 'class_id');
     }

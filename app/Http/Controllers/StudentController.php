@@ -10,11 +10,12 @@ use App\Http\Resources\StudentResource;
 class StudentController extends Controller
 {
      public function index()
-    {
-        $students = Student::all();
+{
+    // Eager load the relationships
+    $students = Student::with(['class', 'section'])->get();
 
-        return Inertia::render('Student/Index', [
-            'students' => StudentResource::collection($students),
-        ]);
-    }
+    return Inertia::render('Student/Index', [
+        'students' => StudentResource::collection($students),
+    ]);
+}
 }

@@ -12,14 +12,15 @@ class Student extends Model
 
     protected $guarded = [];
 
-     public function class() {
-        return $this->hasMany(Classes::class , 'class_id');
-    }
+ public function class()
+{
+    return $this->belongsTo(Classes::class, 'class_id');
+}
 
-
-     public function section() {
-        return $this->hasMany(Section::class , 'section_id');
-    }
+public function section()
+{
+    return $this->belongsTo(Section::class, 'section_id'); // Make sure this column exists
+}
 
 
 }
