@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Resources\ClassResource;
 use Inertia\Inertia;
 use App\Models\Student;
+use App\Http\Requests\StoreStudentRequest;
 use Illuminate\Http\Request;
 use App\Http\Resources\StudentResource;
 use App\Models\Classes;
@@ -28,6 +29,13 @@ class StudentController extends Controller
         return Inertia::render('Student/Create', [
             'classes' => $classes,
         ]);
+    }
+
+     public function store(StoreStudentRequest $request)
+    {
+        Student::create($request->validated());
+
+        return redirect()->route('students.index');
     }
 
 }
