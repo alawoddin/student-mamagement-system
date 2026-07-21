@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class RoleUserTableSeeder extends Seeder
 {
@@ -12,6 +13,7 @@ class RoleUserTableSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        User::find(1)->roles()->attach(1);
+        User::find(2)->roles()->attach(2);
     }
 }
