@@ -13,7 +13,7 @@ class RoleUserTableSeeder extends Seeder
      */
     public function run(): void
     {
-        User::find(1)->roles()->attach(1);
-        User::find(2)->roles()->attach(2);
+        User::find(1)->roles()->attach(1, []);
+        User::find(2)->roles()->attach(2, []);
     }
 }
